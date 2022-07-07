@@ -1,0 +1,919 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Allura&display=swap" rel="stylesheet">
+    <style>
+        .navbar ul {
+            background-color: rgba(245, 238, 238, 0.11);
+        }
+
+        .navbar .navbar-nav .nav-item .nav-link {
+            color: #fff;
+            font-size: larger;
+        }
+
+        .navbar .navbar-nav .nav-item #home {
+            color: #FF5F00;
+        }
+
+        .navbar .navbar-nav .nav-item .nav-link:hover {
+            color: #FF5F00;
+        }
+
+        #back-imge {
+            background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("https://s1.1zoom.me/big0/98/Strawberry_Black_background_Bowl_580553_1280x853.jpg");
+        }
+
+        #back-imge .hedding label {
+            color: #fff;
+        }
+
+        .hedding {
+            margin-top: 13%;
+            color: #FF5F00;
+            text-align: center;
+            font-family: 'Allura', cursive;
+            font-size: 60px;
+            font-weight: 400;
+            height: 50%;
+        }
+
+        #back-imge .hedding label {
+            color: #FF5F00;
+        }
+
+        .welcome {
+            color: #fff;
+            text-align: center;
+            font-size: 60px;
+            font-weight: 400;
+
+        }
+
+        .welcome span {
+            color: #FF5F00;
+            font-family: 'Allura', cursive;
+            font-size: larger;
+        }
+
+        .button .btn {
+            background-color: #FF5F00;
+            color: #fff;
+            border-radius: 30px;
+            border-color: transparent;
+            font-size: large;
+        }
+
+        .button .btn:hover {
+            background-color: transparent;
+            color: #fff;
+            border: 2px solid #FF5F00;
+            font-size: large;
+        }
+        h1{
+            font-family: 'Allura', cursive;
+            color: #FF5F00;
+            font-size: 60px;
+          }
+          #back-img{
+            background-image: url("https://media.istockphoto.com/photos/empty-dark-wooden-table-in-front-of-abstract-blurred-bokeh-background-picture-id1130714046?k=20&m=1130714046&s=612x612&w=0&h=b4bENp3GV_9nwHlYz3PJJfZkL8IlW4DTzJpV-R5XbNw=");
+          background-repeat: no-repeat;
+          background-size: cover;
+          }
+          .container-fluid .container .we{
+            color: #fff;
+            font-size: larger;
+          }
+          .container-fluid .container #side{
+            width: 450px;
+            height: 450px; 
+            border: 5px solid #FF5F00;
+          }
+          .container-fluid .container #side:hover{
+            width: 470px;
+            height: 470px; 
+            border: 5px solid #FF5F00;
+          }
+          .container-fluid .container .white{
+            color: #fff;
+            font-size: large;
+          }
+          .button-m .btn{
+            color: #FF5F00;
+            border: 2px solid #FF5F00;
+            font-size: large;
+            border-radius: 30px;
+          }
+          .button-m .btn:hover{
+            background-color: #FF5F00;
+            color: #fff;
+            font-size: large;
+            border-radius: 30px;
+          }
+          .Buffet h3{
+            color: #FF5F00;
+          }
+          .Buffet label{
+            font-weight: bold;
+          }
+          .Breakfast h3{
+            color: #FF5F00;
+          }
+          .Breakfast label{
+            font-weight: bold;
+            color: rgb(133, 129, 124);
+          }
+          .Breakfast label span{
+            color: rgb(51, 51, 51);
+          }
+          .Lunch h2{
+            color: #FF5F00;
+            font-family: 'Allura', cursive;
+            font-weight: bold;
+          }
+          .Lunch h3{
+            color: #FF5F00;
+          }
+          .Lunch label{
+            font-weight: bold;
+            color: rgb(133, 129, 124);
+          }
+          .Lunch label span{
+            color: rgb(51, 51, 51);
+          }
+          .Chef h2{
+            color: #FF5F00;
+            font-family: 'Allura', cursive;
+            font-weight: bold;
+          }
+          .Chef h3{
+            color: #FF5F00;
+          }
+          .Chef label{
+            font-weight: bold;
+            color: rgb(133, 129, 124);
+          }
+          .Chef label span{
+            color: rgb(51, 51, 51);
+          }
+          .Desert h2{
+            color: #FF5F00;
+            font-family: 'Allura', cursive;
+            font-weight: bold;
+          }
+          .Desert h3{
+            color: #FF5F00;
+          }
+          .Desert label{
+            font-weight: bold;
+            color: rgb(133, 129, 124);
+          }
+          .Desert label span{
+            color: rgb(51, 51, 51);
+          }
+          .Drink h2{
+            color: #FF5F00;
+            font-family: 'Allura', cursive;
+            font-weight: bold;
+          }
+          .Drink h3{
+            color: #FF5F00;
+          }
+          .Drink label{
+            font-weight: bold;
+            color: rgb(133, 129, 124);
+          }
+          .Drink label span{
+            color: rgb(51, 51, 51);
+          }
+          .button-v .btn{
+            background-color: #FF5F00;
+            font-size: large;
+            border-radius: 30px;
+          }
+          .button-v .btn a{
+          color: #fff;
+          text-decoration: none;
+          }
+          .button-v .btn:hover{
+            border: 2px solid #FF5F00;
+            font-size: large;
+            border-radius: 30px;
+            background-color: transparent;
+          }
+          .button-v .btn a:hover{
+            color: #FF5F00;
+            text-decoration: none;
+            }
+            .special{
+              background-color: black;
+            }
+            .special img{
+              width: 250px;
+              height: 250px;
+              display: none;
+            }
+            .special img:hover{
+              width: 280px;
+              height: 280px;
+            }
+            .special .col .cocktail .btn{
+              color: #FF5F00;
+              font-size: larger;
+              font-weight: bold;
+            }
+            .special .col .cocktail .btn:hover{
+              color: #FF5F00;
+              font-size: larger;
+              font-weight: bold;
+              border: 2px solid #FF5F00;
+            }
+            .special .col .description label{
+              color: #fff;
+              font-size: larger;
+              font-weight: bold;
+              display: none;
+              text-align: center;
+            }
+            #rev{
+              background-color: rgb(228, 228, 228);
+            }
+            .Footer{
+              background-color: rgb(31, 30, 30);
+              color: white;
+            }
+            h1{
+              font-family: 'Allura', cursive;
+              color: #FF5F00;
+              font-size: larger;
+            }
+            .Footer .col a{
+              text-decoration: none;
+            }
+            .copyright h4{
+              background-color: black;
+              color: #FF5F00;
+              font-family: 'Allura', cursive;
+              font-size: x-large;
+            }
+    </style>
+    <script>
+      function Buffet() {
+
+        var a = document.getElementById("buffet");
+        a.style.display = "block";
+        var b = document.getElementById("break");
+        b.style.display = "none";
+        var c = document.getElementById("lunch");
+        c.style.display = "none";
+        var d = document.getElementById("chef");
+        d.style.display = "none";
+        var e = document.getElementById("desert");
+        e.style.display = "none";
+        var f = document.getElementById("drink");
+        f.style.display = "none";
+      }
+    
+      function Breakfast() {
+    
+        var a = document.getElementById("buffet");
+        a.style.display = "none";
+        var b = document.getElementById("break");
+        b.style.display = "block";
+        var c = document.getElementById("lunch");
+        c.style.display = "none";
+        var d = document.getElementById("chef");
+        d.style.display = "none";
+        var e = document.getElementById("desert");
+        e.style.display = "none";
+        var f = document.getElementById("drink");
+        f.style.display = "none";
+      }
+    
+      function Lunch() {
+    
+        var a = document.getElementById("buffet");
+        a.style.display = "none";
+        var b = document.getElementById("break");
+        b.style.display = "none";
+        var c = document.getElementById("lunch");
+        c.style.display = "block";
+        var d = document.getElementById("chef");
+        d.style.display = "none";
+        var e = document.getElementById("desert");
+        e.style.display = "none";
+        var f = document.getElementById("drink");
+        f.style.display = "none";
+      }
+    
+      function Chef() {
+    
+        var a = document.getElementById("buffet");
+        a.style.display = "none";
+        var b = document.getElementById("break");
+        b.style.display = "none";
+        var c = document.getElementById("lunch");
+        c.style.display = "none";
+        var d = document.getElementById("chef");
+        d.style.display = "block";
+        var e = document.getElementById("desert");
+        e.style.display = "none";
+        var f = document.getElementById("drink");
+        f.style.display = "none";
+      }
+    
+      function Desert() {
+    
+        var a = document.getElementById("buffet");
+        a.style.display = "none";
+        var b = document.getElementById("break");
+        b.style.display = "none";
+        var c = document.getElementById("lunch");
+        c.style.display = "none";
+        var d = document.getElementById("chef");
+        d.style.display = "none";
+        var e = document.getElementById("desert");
+        e.style.display = "block";
+        var f = document.getElementById("drink");
+        f.style.display = "none";
+      }
+    
+      function Drinks() {
+    
+        var a = document.getElementById("buffet");
+        a.style.display = "none";
+        var b = document.getElementById("break");
+        b.style.display = "none";
+        var c = document.getElementById("lunch");
+        c.style.display = "none";
+        var d = document.getElementById("chef");
+        d.style.display = "none";
+        var e = document.getElementById("desert");
+        e.style.display = "none";
+        var f = document.getElementById("drink");
+        f.style.display = "block";
+      }
+    
+
+      function Drinkl() {
+
+        var a = document.getElementById("Firec");
+        a.style.display = "block";
+        var b = document.getElementById("Bluec");
+        b.style.display = "none";
+        var c = document.getElementById("Straw");
+        c.style.display = "none";
+        var d = document.getElementById("Bluel");
+        d.style.display = "none";
+        var e = document.getElementById("Firem");
+        e.style.display = "none";
+        var f = document.getElementById("img1");
+        f.style.display = "block";
+        var g = document.getElementById("img2");
+        g.style.display = "none";
+        var h = document.getElementById("img3");
+        h.style.display = "none";
+        var i = document.getElementById("img4");
+        i.style.display = "none";
+        var j = document.getElementById("img5");
+        j.style.display = "none";
+      }
+      
+      function Drinkll() {
+      
+        var a = document.getElementById("Firec");
+        a.style.display = "none";
+        var b = document.getElementById("Bluec");
+        b.style.display = "block";
+        var c = document.getElementById("Straw");
+        c.style.display = "none";
+        var d = document.getElementById("Bluel");
+        d.style.display = "none";
+        var e = document.getElementById("Firem");
+        e.style.display = "none";
+        var f = document.getElementById("img1");
+        f.style.display = "none";
+        var g = document.getElementById("img2");
+        g.style.display = "block";
+        var h = document.getElementById("img3");
+        h.style.display = "none";
+        var i = document.getElementById("img4");
+        i.style.display = "none";
+        var j = document.getElementById("img5");
+        j.style.display = "none";
+      }
+      
+      function Drinklll() {
+      
+        var a = document.getElementById("Firec");
+        a.style.display = "none";
+        var b = document.getElementById("Bluec");
+        b.style.display = "none";
+        var c = document.getElementById("Straw");
+        c.style.display = "block";
+        var d = document.getElementById("Bluel");
+        d.style.display = "none";
+        var e = document.getElementById("Firem");
+        e.style.display = "none";
+        var f = document.getElementById("img1");
+        f.style.display = "none";
+        var g = document.getElementById("img2");
+        g.style.display = "none";
+        var h = document.getElementById("img3");
+        h.style.display = "block";
+        var i = document.getElementById("img4");
+        i.style.display = "none";
+        var j = document.getElementById("img5");
+        j.style.display = "none";
+      }
+      
+      function Drinkllll() {
+      
+        var a = document.getElementById("Firec");
+        a.style.display = "none";
+        var b = document.getElementById("Bluec");
+        b.style.display = "none";
+        var c = document.getElementById("Straw");
+        c.style.display = "none";
+        var d = document.getElementById("Bluel");
+        d.style.display = "block";
+        var e = document.getElementById("Firem");
+        e.style.display = "none";
+        var f = document.getElementById("img1");
+        f.style.display = "none";
+        var g = document.getElementById("img2");
+        g.style.display = "none";
+        var h = document.getElementById("img3");
+        h.style.display = "none";
+        var i = document.getElementById("img4");
+        i.style.display = "block";
+        var j = document.getElementById("img5");
+        j.style.display = "none";
+      }
+      
+      function Drinklllll() {
+      
+        var a = document.getElementById("Firec");
+        a.style.display = "none";
+        var b = document.getElementById("Bluec");
+        b.style.display = "none";
+        var c = document.getElementById("Straw");
+        c.style.display = "none";
+        var d = document.getElementById("Bluel");
+        d.style.display = "none";
+        var e = document.getElementById("Firem");
+        e.style.display = "block";
+        var f = document.getElementById("img1");
+        f.style.display = "none";
+        var g = document.getElementById("img2");
+        g.style.display = "none";
+        var h = document.getElementById("img3");
+        h.style.display = "none";
+        var i = document.getElementById("img4");
+        i.style.display = "none";
+        var j = document.getElementById("img5");
+        j.style.display = "block";
+      }
+    
+    </script>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <title>Hello, world!</title>
+</head>
+
+<body>
+
+    <div class='container-fluid' id='back-imge'>
+
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mx-auto mb-2 mb-lg-0 mt-5">
+                        <li class="nav-item ms-5">
+                            <a class="nav-link active ms-5" id="home" aria-current="page" href="\">Home</a>
+                        </li>
+                        <li class="nav-item ms-2">
+                            <a class="nav-link" href="/about">About</a>
+                        </li>
+                        <li class="nav-item ms-2">
+                            <a class="nav-link" href="/menu">Menu</a>
+                        </li>
+                        <li class="nav-item ms-2">
+                            <a class="nav-link" href="/catering">Catering</a>
+                        </li>
+                        <li class="nav-item ms-2">
+                            <a class="nav-link" href="/work">Work With Us</a>
+                        </li>
+                        <li class="nav-item ms-2">
+                            <a class="nav-link" href="/contact">Contact</a>
+                        </li>
+                        <li class="nav-item ms-2 me-5">
+                            <a class="nav-link me-5"
+                                href="C:\Users\Ankita\Desktop\The Social Kitchen\mykitchen\src\Component\Reservation.js">Reservation</a>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+        </nav>
+        <div class="hedding">
+            <label>We Do What You Want!</label>
+        </div>
+        <label class="welcome">WELCOME TO THE <span>"</span> HEALTHY & DELICIOUS <span>"</span> WORLD
+            <span>..............!</span> </label>
+        <div class="button text-center mt-2">
+            <button type="button" class="btn btn-outline-warning mb-5 ps-4 pe-4">Our Menu</button>
+            <button type="button" class="btn btn-outline-warning ms-5 mb-5 ps-4 pe-4">Reservation</button>
+        </div>
+    </div>
+    <h1 class="text-center mt-5">The art of crafting and serving</h1>
+    <div class="paragraph text-center ms-5 me-5">
+      <p class="ms-5 me-5">
+        There is no love sincerer than the love of good food.
+      </p>
+      <p class="ms-5 me-5">
+        The Socialite with an array of artistically crafted food and charming
+        ambience arrives at one of the most prestigious culinary scenes in San
+        Francisco’s South Bay to create beautiful, lasting memories.
+      </p>
+      <p class="ms-5 me-5">
+        We strive to achieve a delicate balance of traditional flavors with a
+        modern approach to come up to everyone’s palette and unique tastes.
+        Whether it’s business meetings, first dates to fall in love over
+        dinner, or friends catching up – we assure warm, delightful service
+        every time.
+      </p>
+    </div>
+    <div class="container-fluid" id="back-img">
+      <div class="container mt-5">
+        <div class="row">
+          <div class="col-md-6 mt-5">
+            <p class="we mt-5">We are----</p>
+            <h1>Exquisite & Authentic</h1>
+            <p class="white">
+              The foundation of this dining has seen various
+              transitions and trends over the time. The one thing that has
+              stayed constant is that food is still our common ground, a
+              universal experience that really has the power to bring everyone
+              together at a table.
+            </p>
+            <p class="white">
+              We present culinary experience that captures the essence of
+              local flavors, wholesome ingredients, fresh produce and choicest
+              of the wines. Our kitchen features a live fire where grilled
+              meats, seafood and vegetarian delights are brought to finish
+              from scratch. Paired with our finest of the wine collection, it
+              makes for an indulgent dining experience perfect for any
+              occasion.
+            </p>
+          </div>
+          <div class="col-md-6 mt-5 mb-5">
+            <img
+              src="https://i.pinimg.com/736x/9a/de/71/9ade7195f59b8a25fc2add09f8a25a23.jpg"
+              id="side"
+              class="img-fluid mt-5 ms-2"
+              alt="..."
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <h1 class='text-center mt-5'>Food & Drinks</h1>
+    <div class="button-m text-center mt-4">
+<button onClick="Buffet()" type="button" class="btn mb-5 ps-4 pe-4">Buffet</button>
+<button onClick="Breakfast()" type="button" class="btn ms-2 mb-5 ps-4 pe-4">Breakfast</button>
+<button onClick="Lunch()" type="button" class="btn ms-2 mb-5 ps-4 pe-4">Lunch & Dinner</button>
+<button onClick="Chef()" type="button" class="btn ms-2 mb-5 ps-4 pe-4">Chef's Special</button>
+<button onClick="Desert()" type="button" class="btn ms-2 mb-5 ps-4 pe-4">Desert</button>
+<button onClick="Drinks()" type="button" class="btn ms-2 mb-5 ps-4 pe-4">Drinks</button>
+</div>
+<div class='Buffet text-center' id='buffet'>
+
+<h3>Breakfast Buffet</h3>
+<label>Timing: 07:00 AM - 10:30 AM <br/>
+<span>Price:1500</span> </label>
+
+ {% comment %} <h3 class='mt-3'>Lunch Buffet</h3>
+<label>Timing: 12:30 PM - 03:00 PM <br/>
+<span>Price:1650</span> </label>
+
+<h3 class='mt-3'>Sunday Brunch</h3>
+<label>Timing: 01:00 PM - 03:30 PM <br/>
+<span>Price:2000</span> </label>
+
+<h3 class='mt-3'>Dinner Buffet</h3>
+<label>Timing: 07:00 PM - 10:30 PM <br/>
+<span>Price:1750</span> </label>
+
+<h3 class='mt-3'>Soups, Salads & Deserts</h3>
+<label><span>Price:1650</span></label> {% endcomment %}
+
+</div>
+
+
+<div class='Breakfast text-center mt-5' id='break'>
+
+<h3>Idli</h3>
+<label>Steamed rice and lentil cake, a south Indian delicay, served with sambhar and chutneys <br/>
+<span>Price:650</span> </label>
+
+<h3 class='mt-3'>Dosa(Plain/Masala)</h3>
+<label>South Indian crisp rice and lentil pancake, served with sabhar and chutneys<br/>
+<span>Price:700</span> </label>
+
+{% comment %} <h3 class='mt-3'>Egg to order</h3>
+<label>Your choice of eggs: poached, scrambled, omelette or fried, served with potato roesti and grilled tomato topped with parmesan and parsely<br/>
+<span>Price:700</span> </label> {% endcomment %}
+
+</div>
+
+
+<div class='Lunch text-center mt-5' id='lunch'>
+
+<h2><u>Soups</u></h2>
+<h3>Mushroom Cappuccino</h3>
+<label>Porchini dust, toasted almonds<br/>
+<span>Price:600</span> </label>
+
+
+
+</div>
+
+
+<div class='Chef text-center mt-5' id='chef'>
+
+<h2><u>Pizza</u></h2>
+<h3>Pizza Margherita</h3>
+<label>Classic combination of fresh tomato, basil and mozzarella cheese<br/>
+<span>Price:875</span> </label>
+
+
+</div>
+
+
+<div class='Desert text-center mt-5' id='desert'>
+
+<h2><u>Deserts</u></h2>
+<h3>Gulkand Gulab Jamun</h3>
+<label>Paan flavoured reduced milk dumplings deep fried and simmered in orange sugar syrup<br/>
+<span>Price:550</span> </label>
+
+</div>
+
+
+<div class='Drink text-center mt-5' id='drink'>
+
+<h2><u>Hot & Cold Beverage</u></h2>
+<h3>Smoothie</h3>
+<label>Blueberry and avocado/museli and forest honey/ orange and ginger<br/>
+<span>Price:450</span> </label>
+
+
+</div>
+<div class="button-v text-center mt-5 mb-5">
+<button type="button" class="btn  ps-4 pe-4"> <a href="#" class="link">View All</a> </button>
+</div>
+
+<div class='special'>
+  <div class="container">
+<div class="row">
+<h1 class='text-center mt-5'>Our Special Cocktails...............</h1>
+<div class="col mt-5">
+  <div class='cocktail mt-5'>
+<button onClick="Drinkl()" type="button" class="btn mb-3 ps-4 pe-4">Chef's Special Drink 1</button><br/>
+<button onClick="Drinkll()" type="button" class="btn mb-3 ps-4 pe-4">Chef's Special Drink 2</button>
+<button onClick="Drinklll()" type="button" class="btn mb-3 ps-4 pe-4">Chef's Special Drink 3</button>
+<button onClick="Drinkllll()" type="button" class="btn mb-3 ps-4 pe-4">Chef's Special Drink 4</button>
+<button onClick="Drinklllll()" type="button" class="btn mb-3 ps-4 pe-4">Chef's Special Drink 5</button>
+
+  </div>
+</div>
+<div class="col mt-5">
+<div class='description mt-5'>
+<br/><br/><br/><br/><br/>
+<label id='Firec'>Fire Cocktail</label>
+  <label id='Bluec'>Blue Curacao with Ice</label>
+  <label id='Straw'>Strawberry Splashing Martini</label>
+  <label id='Bluel'>Blue Lagoon Cocktail</label>
+  <label id='Firem'>Fire Martini</label>
+</div>
+</div>
+<div class="col mt-5 mb-5">
+<img src="https://img5.goodfon.com/wallpaper/nbig/d/33/bokal-kokteil-ogon.jpg" class="img-fluid mt-5 mb-5" id='img1' alt="..."/>
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTuicje_3ueAkyS-xfPdbkTZNN_ICiPNNujZWylHzraMalmR9Mfa-ta8Yayv2uU7Jjpmic&usqp=CAU" class="img-fluid mt-5 mb-5" id='img2' alt="..."/>
+<img src="https://media.istockphoto.com/photos/cocktail-on-a-black-background-with-strawberries-mint-in-water-spray-picture-id1281313271?k=20&m=1281313271&s=612x612&w=0&h=KCoxu76quUZwPxGpqtRViVJ9MF2NOa2ygBBT36WIuLs=" class="img-fluid mt-5 mb-5" id='img3' alt="..."/>
+<img src="https://media.istockphoto.com/photos/blue-lagoon-cocktail-picture-id612856754?k=20&m=612856754&s=612x612&w=0&h=5hYG20F9diTTyt9V2cwcCXoF7WYcvjCNGKNbyMjhUcM=" class="img-fluid mt-5 mb-5" id='img4' alt="..."/>
+<img src="https://w0.peakpx.com/wallpaper/1007/88/HD-wallpaper-mayurdhvajsinh-cocktail-cocktails.jpg" class="img-fluid mt-5 mb-5" id='img5' alt="..."/>
+
+</div>
+</div>
+</div>
+
+  </div>
+
+  <div
+  id="carouselExampleCaptions"
+  class="carousel slide"
+  data-bs-ride="carousel"
+>
+  <div class="carousel-indicators">
+    <button
+      type="button"
+      data-bs-target="#carouselExampleCaptions"
+      data-bs-slide-to="0"
+      class="active"
+      aria-current="true"
+      aria-label="Slide 1"
+    ></button>
+    <button
+      type="button"
+      data-bs-target="#carouselExampleCaptions"
+      data-bs-slide-to="1"
+      aria-label="Slide 2"
+    ></button>
+    <button
+      type="button"
+      data-bs-target="#carouselExampleCaptions"
+      data-bs-slide-to="2"
+      aria-label="Slide 3"
+    ></button>
+  </div>
+  <h1 class="text-center mt-5">What they are saying about us</h1>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <div class="container">
+        <div class="row text-center mt-5 mb-5">
+          <div class="col"  id="rev">
+            <figure class="text-center">
+              <blockquote class="blockquote mt-5 mb-5">
+                <p>
+                  
+                  I liked how the food came out quickly and the servers
+                  were really kind . I liked my hangover burger a lot since it was
+                  so savory and a huge portion size. The Belgian waffle
+                  was super yummy too even though it was simple. I also
+                  liked the fries that came with the dish.
+                </p>
+              </blockquote>
+              <figcaption class="blockquote-footer">
+               Oscar Flores
+                </figcaption>
+            </figure>
+          </div>
+          <div class="col ms-5"  id="rev">
+            <figure class="text-center">
+              <blockquote class="blockquote mt-5 mb-5">
+                <p>
+                  We went to the grand opening tonight. The atmosphere is
+                  great, awesome smell of wood fire from the pizza oven,
+                  beautifully crafted cocktails, food was incredible and
+                  the staff was very friendly. we will definitely be
+                  returning to try some of the other items on the menu.
+                </p>
+              </blockquote>
+              <figcaption class="blockquote-footer">
+               Fashion SF
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <div class="container">
+        <div class="row text-center mt-5 mb-5">
+          <div class="col"  id="rev">
+            <figure class="text-center">
+              <blockquote class="blockquote mt-5 mb-5">
+                <p>
+                  This place is a neighborhood gem! It has great bar
+                  ambiance, bay bridge views , outside heated seating,
+                  firepits. MANY vegan 🌱 vegetarian and gluten free
+                  options. The food tastes amazing - fresh, colorful,
+                  spicy, flavorful . 👏🏻👏🏻
+                </p>
+              </blockquote>
+              <figcaption class="blockquote-footer">
+               Oscar Flawrs
+              </figcaption>
+            </figure>
+          </div>
+          <div class="col ms-5"  id="rev">
+            <figure class="text-center">
+              <blockquote class="blockquote mt-5 mb-5">
+                <p>
+                 
+                  Excellent food and ambiance in spectacular setting . The
+                  executive chef is very friendly and warm with all the
+                  patrons and shares his global culinary experience and
+                  joy for creativity in the kitchen . A must visit when in
+                  the SF waterfront!
+                </p>
+              </blockquote>
+              <figcaption class="blockquote-footer">
+               Fashion Sf
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <button
+    class="carousel-control-prev"
+    type="button"
+    data-bs-target="#carouselExampleCaptions"
+    data-bs-slide="prev"
+  >
+    <span
+      class="carousel-control-prev-icon"
+      aria-hidden="true"
+    ></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button
+    class="carousel-control-next"
+    type="button"
+    data-bs-target="#carouselExampleCaptions"
+    data-bs-slide="next"
+  >
+    <span
+      class="carousel-control-next-icon"
+      aria-hidden="true"
+    ></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+
+
+<div class='Footer'>
+  <div class="container">
+<div class="row">
+<div class="col text-center mt-5">
+  <h1 class='mt-5'>Useful Links</h1><br/>
+  <a href="#" class="link-light">Home</a><br/><br/>
+  <a href="#" class="link-light">About Us</a><br/><br/>
+  <a href="#" class="link-light">Menu</a><br/><br/>
+  <a href="#" class="link-light">Gallery</a><br/><br/>
+  <a href="#" class="link-light">Catering</a><br/><br/>
+  <a href="#" class="link-light">Work with us</a><br/><br/>
+  <a href="#" class="link-light mb-5">Contact Us</a>
+</div>
+<div class="col text-center mt-5">
+<h1 class='text-center mt-5'>Our Timing</h1><br/>
+<label>Monday: 4 PM to 9 PM</label><br/><br/>
+<label>Tuesday: 4 PM to 9 PM</label><br/><br/>
+<label>Wednesday: 11 AM to 9 PM</label><br/><br/>
+<label>Thursday: 11 AM to 9 PM</label><br/><br/>
+<label>Friday: 11 AM to 10 PM</label><br/><br/>
+<label>Saturday: 10 AM to 10 PM</label><br/><br/>
+<label class='mb-5'>Sunday: 10 AM to 9 PM</label><br/>
+</div>
+<div class="col text-center  mt-5">
+<h1 class='mt-5'>Contact Details</h1><br/>
+<label>........................,<br/>
+Muzaffarpur Bihar 842001<br/><br/>
+Phone: +91 9876543210<br/>
+Email: abc@gmail.com <br/>
+<div class='social-icon'>
+
+</div>
+</label>
+</div>
+</div>
+</div>
+  </div>
+
+  <div class='copyright text-center'>
+
+    <h4 class='p-5'>© Copyright All Rights Reserved</h4>
+    
+          </div>
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    -->
+</body>
+
+</html>

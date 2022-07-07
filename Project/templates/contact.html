@@ -1,0 +1,60 @@
+{% extends 'base.html' %}
+{% block style %}
+h1 ul{
+color: #black;
+}
+#label{
+font-size: large;
+color: #FF5F00;
+}
+input{
+border: 2px solid #fff;
+font-size: large;
+border-radius: 30px;
+background-color: transparent;
+color: #FF5F00;
+}
+textarea{
+border: 2px solid #fff;
+font-size: large;
+border-radius: 30px;
+background-color: transparent;
+color: #FF5F00;
+}
+.button .btn {
+background-color: #FF5F00;
+color: #fff;
+border-radius: 30px;
+border-color: transparent;
+font-size: large;
+}
+
+.button .btn:hover {
+background-color: transparent;
+color: #fff;
+border: 2px solid #FF5F00;
+font-size: large;
+}
+{% endblock style %}
+{% block body %}
+<div class="container-fluid mt-5">
+    <div class="mb-3">
+        <h1 class="text-center mt-3"> <u>Contact Us</u> </h1>
+        <form method="post"  action="/contact">
+            {% csrf_token %}
+            <div class="container mt-5 text-center">
+                <label id="label"><b>Name :</b></label><br>
+                <input class="ps-3 mb-3" name="name" type="text" placeholder="Your Name......"><br>
+                <label id="label"><b>Email Id :</b></label><br>
+                <input class="ps-3 mb-3" name="email" type="email" placeholder="Your Email Id...."><br>
+                <label id="label"><b>Phone No. :</b></label><br>
+                <input class="ps-3 mb-3" name="phone" type="text" placeholder="Your Mobile No. ....."><br>
+                <label id="label"><b>Message :</b></label><br>
+                <textarea class="ps-3 pt-2 mb-3" name="desc" id="" cols="80" rows="3" placeholder="Your Message............."></textarea><br>
+                <div class="button text-center mt-2 mb-5">
+                    <button type="submit" class="btn btn-outline-warning mb-5 ps-4 pe-4">Submit</button>
+                </div>
+            </div>
+        </form>
+    </div>
+    {% endblock body %}

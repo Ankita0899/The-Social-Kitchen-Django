@@ -1,0 +1,254 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Allura&display=swap" rel="stylesheet">
+    <style> {% block style %}{% endblock style %}
+        .navbar ul {
+            background-color: rgba(245, 238, 238, 0.11);
+        }
+
+        .navbar .navbar-nav .nav-item .nav-link {
+            color: #fff;
+            font-size: larger;
+        }
+
+        .navbar .navbar-nav .nav-item .nav-link:hover {
+            color: #FF5F00;
+        }
+        .back-imge {
+            background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("https://s1.1zoom.me/big0/98/Strawberry_Black_background_Bowl_580553_1280x853.jpg");
+            background-repeat: none;
+            background-attachment: fixed;
+        }
+        .Footer {
+            background-color: rgb(31, 30, 30);
+            color: white;
+        }
+
+        h1 {
+            font-family: 'Allura', cursive;
+            color: #FF5F00;
+            font-size: larger;
+        }
+
+        .Footer .col a {
+            text-decoration: none;
+        }
+
+        .copyright h4 {
+            background-color: black;
+            color: #FF5F00;
+            font-family: 'Allura', cursive;
+            font-size: x-large;
+        }
+    </style>
+<script>
+    function Buffet() {
+
+        var a = document.getElementById("buffet");
+        a.style.display = "block";
+        var b = document.getElementById("break");
+        b.style.display = "none";
+        var c = document.getElementById("lunch");
+        c.style.display = "none";
+        var d = document.getElementById("chef");
+        d.style.display = "none";
+        var e = document.getElementById("desert");
+        e.style.display = "none";
+        var f = document.getElementById("drink");
+        f.style.display = "none";
+      }
+    
+      function Breakfast() {
+    
+        var a = document.getElementById("buffet");
+        a.style.display = "none";
+        var b = document.getElementById("break");
+        b.style.display = "block";
+        var c = document.getElementById("lunch");
+        c.style.display = "none";
+        var d = document.getElementById("chef");
+        d.style.display = "none";
+        var e = document.getElementById("desert");
+        e.style.display = "none";
+        var f = document.getElementById("drink");
+        f.style.display = "none";
+      }
+    
+      function Lunch() {
+    
+        var a = document.getElementById("buffet");
+        a.style.display = "none";
+        var b = document.getElementById("break");
+        b.style.display = "none";
+        var c = document.getElementById("lunch");
+        c.style.display = "block";
+        var d = document.getElementById("chef");
+        d.style.display = "none";
+        var e = document.getElementById("desert");
+        e.style.display = "none";
+        var f = document.getElementById("drink");
+        f.style.display = "none";
+      }
+    
+      function Chef() {
+    
+        var a = document.getElementById("buffet");
+        a.style.display = "none";
+        var b = document.getElementById("break");
+        b.style.display = "none";
+        var c = document.getElementById("lunch");
+        c.style.display = "none";
+        var d = document.getElementById("chef");
+        d.style.display = "block";
+        var e = document.getElementById("desert");
+        e.style.display = "none";
+        var f = document.getElementById("drink");
+        f.style.display = "none";
+      }
+    
+      function Desert() {
+    
+        var a = document.getElementById("buffet");
+        a.style.display = "none";
+        var b = document.getElementById("break");
+        b.style.display = "none";
+        var c = document.getElementById("lunch");
+        c.style.display = "none";
+        var d = document.getElementById("chef");
+        d.style.display = "none";
+        var e = document.getElementById("desert");
+        e.style.display = "block";
+        var f = document.getElementById("drink");
+        f.style.display = "none";
+      }
+    
+      function Drinks() {
+    
+        var a = document.getElementById("buffet");
+        a.style.display = "none";
+        var b = document.getElementById("break");
+        b.style.display = "none";
+        var c = document.getElementById("lunch");
+        c.style.display = "none";
+        var d = document.getElementById("chef");
+        d.style.display = "none";
+        var e = document.getElementById("desert");
+        e.style.display = "none";
+        var f = document.getElementById("drink");
+        f.style.display = "block";
+      }
+    
+</script>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <title>{% block title %}{% endblock title %} The Social Kitchen</title>
+</head>
+
+<body>
+    <div class="back-imge">
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mx-auto mb-2 mb-lg-0 mt-5 ">
+                    <li class="nav-item ms-5">
+                        <a class="nav-link active ms-5" id="home" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item ms-2">
+                        <a class="nav-link" href="/about">About</a>
+                    </li>
+                    <li class="nav-item ms-2">
+                        <a class="nav-link" href="/menu">Menu</a>
+                    </li>
+                    <li class="nav-item ms-2">
+                        <a class="nav-link" href="/catering">Catering</a>
+                    </li>
+                    <li class="nav-item ms-2">
+                        <a class="nav-link" href="/work">Work With Us</a>
+                    </li>
+                    <li class="nav-item ms-2">
+                        <a class="nav-link" href="/contact">Contact</a>
+                    </li>
+                    <li class="nav-item ms-2 me-5">
+                        <a class="nav-link me-5"
+                            href="C:\Users\Ankita\Desktop\The Social Kitchen\mykitchen\src\Component\Reservation.js">Reservation</a>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+
+{% block body %}{% endblock body %}
+</div>
+    <div class='Footer'>
+        <div class="container">
+            <div class="row">
+                <div class="col text-center mt-5">
+                    <h1 class='mt-5'>Useful Links</h1><br />
+                    <a href="#" class="link-light">Home</a><br /><br />
+                    <a href="#" class="link-light">About Us</a><br /><br />
+                    <a href="#" class="link-light">Menu</a><br /><br />
+                    <a href="#" class="link-light">Gallery</a><br /><br />
+                    <a href="#" class="link-light">Catering</a><br /><br />
+                    <a href="#" class="link-light">Work with us</a><br /><br />
+                    <a href="#" class="link-light mb-5">Contact Us</a>
+                </div>
+                <div class="col text-center mt-5">
+                    <h1 class='text-center mt-5'>Our Timing</h1><br />
+                    <label>Monday: 4 PM to 9 PM</label><br /><br />
+                    <label>Tuesday: 4 PM to 9 PM</label><br /><br />
+                    <label>Wednesday: 11 AM to 9 PM</label><br /><br />
+                    <label>Thursday: 11 AM to 9 PM</label><br /><br />
+                    <label>Friday: 11 AM to 10 PM</label><br /><br />
+                    <label>Saturday: 10 AM to 10 PM</label><br /><br />
+                    <label class='mb-5'>Sunday: 10 AM to 9 PM</label><br />
+                </div>
+                <div class="col text-center  mt-5">
+                    <h1 class='mt-5'>Contact Details</h1><br />
+                    <label>........................,<br />
+                        Muzaffarpur Bihar 842001<br /><br />
+                        Phone: +91 9876543210<br />
+                        Email: abc@gmail.com <br />
+                        <div class='social-icon'>
+
+                        </div>
+                    </label>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class='copyright text-center'>
+
+        <h4 class='p-5'>© Copyright All Rights Reserved</h4>
+
+    </div>
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    -->
+</body>
+
+</html>
